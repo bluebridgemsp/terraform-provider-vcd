@@ -68,5 +68,7 @@ require (
 	google.golang.org/protobuf v1.31.0 // indirect
 )
 
-replace github.com/vmware/go-vcloud-director/v2 v2.24.0 => ../go-vcloud-director
-replace github.com/vmware/terraform-provider-vcd/v3 v3.12.1 => . 
+replace (
+	github.com/vmware/go-vcloud-director/v2 => github.com/bluebridgemsp/go-vcloud-director/v2 v2.24.0
+	github.com/vmware/terraform-provider-vcd/v3 => ./
+)
